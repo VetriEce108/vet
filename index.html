@@ -35,13 +35,13 @@ if(this.el.object3D.visible == true){
   <div style='position: fixed; top: 10px; width:inherit; text-align: center;'>
     <a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - Check out the repository !
   </div>
-  <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 180; canvasHeight: 120' >
+  <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 180; canvasHeight: 60' >
     <a-assets>
       <a-video id="vid" src="https://cdn.glitch.com/d52e7920-ce72-41de-95df-c07d873004b5%2Fdesignathon_v.mp4?1556136460786" loop="true" crossorigin width="2" position="0 0 -1.6"><a-video>
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
-      <a-plane position='0 0 0.5' scale="1 1 1" width="1" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
+      <a-plane position='0 0 0' scale="1 1 1" width="1" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
     </a-marker>
 
   </a-scene>
