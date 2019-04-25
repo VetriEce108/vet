@@ -37,11 +37,11 @@ if(this.el.object3D.visible == true){
   </div>
   <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180' >
     <a-assets>
-      <a-video id="vid" src="https://cdn.glitch.com/b62367d1-ceab-454b-b664-b032f995ed86%2FBig_Buck_Bunny_Trailer_1080p.ogv.720p.webm?1532370072191" loop="true" crossorigin width="2" position="0 0 0"><a-video>
+      <a-video id="vid" src="https://cdn.glitch.com/b62367d1-ceab-454b-b664-b032f995ed86%2FBig_Buck_Bunny_Trailer_1080p.ogv.720p.webm?1532370072191" loop="true" crossorigin width="2" position="0 2 0"><a-video>
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
-      <a-plane position='0 0 0' scale="1 1 1" width="2" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
+      <a-plane position='0 2 0' scale="1 1 1" width="2" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
     </a-marker>
 
   </a-scene>
