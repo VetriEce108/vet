@@ -5,7 +5,7 @@
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.4/dist/aframe-extras.min.js"></script>
-
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
   <script>
 AFRAME.registerComponent('vidhandler', {
@@ -40,7 +40,7 @@ if(this.el.object3D.visible == true){
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
-      <a-plane position='0 0 -0.6' scale="1 1 1" width="1" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
+      <a-plane position='0 0 -1.6' scale="1 1 1" width="1" rotation="0 0 0" material='transparent:true;opacity: 0.9;src:#vid'></a-plane>
     </a-marker>
 
   </a-scene>
